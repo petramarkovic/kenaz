@@ -1,0 +1,218 @@
+.carousel-container {
+    background-image: url(/images/single-carousel.png);
+    height: 588px;
+}
+
+.carousel-info-single {
+    position: relative;
+    top: 390px;
+    background-image: url(/images/single-carouselh1.png);
+    padding: 30px;
+}
+
+.carousel-info-single span {
+    color: #000;
+    font-size: 12px;
+    font-family: "Varela Round", sans-serif;
+
+}
+
+.carousel-info-single h1 {
+  font-family: "Bitter", serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 52px;
+    width: 751px;
+    height: 144px;
+    
+}
+
+.story {
+    background-color: #fff;
+    width: 622px;
+    height: 953px;
+    margin-bottom: 18px;
+}
+
+.story-container p {
+    font-family: "Bitter", serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #444;
+    padding: 37px 20px 42px 30px;
+}
+
+.story-container img {
+    width: 100%;
+    padding: 0;
+}
+
+.about-author {
+    width: 622px;
+    height: 222px;
+    background-color: #fff;
+}
+
+.about-author h1 {
+    font-family: "Bitter", serif;
+    font-size: 24px;
+    color: #363f48;
+    padding-top: 18px;
+    padding-left: 31px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.author-info p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #444;
+    padding-left: 20px;
+}
+
+.comments {
+    background-color: #fff;
+    width: 622px;
+    height: 1015px;
+    margin-top: 18px;
+    margin-bottom: 45px;
+}
+
+.comments h1 {
+    font-family: "Bitter", serif;
+    font-size: 24px;
+    padding-top: 15px;
+    padding-left: 31px;
+    font-weight: bold;
+}
+
+.comment {
+    display: inline-block;
+}
+
+.comment img {
+    float: left;
+   padding: 20px;
+   display: inline-block;
+}
+
+.comment h3 {
+    font-family: "Bitter", serif;
+    font-size: 18px;
+    color: #4d4382;
+}
+
+.comment p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 13px;
+    color: #444;
+    line-height: 20px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.comment a {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding-left: 200px;
+}
+
+.comment-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.comment-info {
+   display: flex;
+}
+
+.add-comment-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.add-comment-container p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 13px;
+    color: #444;
+    line-height: 20px;
+    margin-bottom: 26px;
+}
+
+.input-text, .add-comment-container textarea {
+    background-color: #ddd;
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    color: #666;
+    border: none;
+    padding: 10px 17px;
+    margin: 8px 0;
+}
+
+.input-text {
+    width: 303px;
+}
+
+.submit {
+    background-color: #4d4382;
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    display: block;
+    width: 153px;
+}
+
+@media (max-width: 640px){
+    .carousel-container {
+        width: auto;
+    }
+    .carousel-info-single h1 {
+        font-size: 30px;
+        width: auto;
+    }
+    .story {
+        width: auto;
+    }
+    .about-author {
+        width: auto;
+        height: auto;
+    }
+    .author-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .comments {
+        width: auto;
+        height: auto;
+    }
+    .comment {
+        display: flex;
+        flex-direction: column;
+    }
+    .comment p {
+        padding: 0;
+    }
+    .comment-info {
+        display: block;
+    }
+    .comment-info span {
+        padding-left: 0;
+    }
+    .comment img {
+        width: 100px;
+        margin: 0 auto;
+    }
+}
