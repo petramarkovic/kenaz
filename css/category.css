@@ -94,8 +94,14 @@
         width: auto;
         height: auto;
     }
+
+    .article-box p {
+        height: auto;
+    }
+
     .article-heading {
         width: auto;
+        font-size: 18px;
     }
     .article {
         flex-direction: column;
