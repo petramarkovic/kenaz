@@ -90,6 +90,10 @@
 }
 
 @media (max-width: 640px){
+    .arrow-right {
+        margin-top: 170px;
+    }
+
     .article-container {
         width: auto;
         height: auto;
