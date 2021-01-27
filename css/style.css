@@ -142,7 +142,7 @@ nav a {
 .banner-big {
   display: block;
   width: 940px;
-  margin: 15px auto;
+  margin: 16px auto 18px auto;
   height: 120px;
   background-color: #fff;
   border: 1px solid #d7d7d7;
@@ -160,7 +160,8 @@ nav a {
 .carousel-container {
   width: 940px;
   height: 425px;
-  margin: 20px auto;
+  margin: 0 auto;
+  margin-bottom: 19px;
 }
 
 .arrow {
@@ -287,6 +288,7 @@ main {
 
 .sport {
   border-left: 13px solid #84c14f;
+  margin-bottom: 19px;
 }
 
 .business {
@@ -326,10 +328,11 @@ main {
 .banner-small {
   display: block;
   width: 623px;
-  height: 120px;
+  height: 123px;
   background-color: #fff;
   border: 1px solid #d7d7d7;
-  margin-bottom: 27px;
+  margin-bottom: 17px;
+  margin-right: 16px;
 }
 .banner-small p {
   font-family: "Varela Round", sans-serif;
@@ -345,7 +348,8 @@ main {
   background-color: #fff;
   width: 612px;
   height: 325px;
-  border-left: 13px solid #fcc44d ;
+  border-left: 13px solid #fcc44d;
+  margin: 10px 17px 17px 0;
 }
 
 .news-carousel-header {
@@ -396,7 +400,6 @@ main {
 
 .editorials-local-news-container {
   display: flex;
-  padding-top: 17px;
 }
 
 .editorials-container, .local-container {
@@ -454,7 +457,7 @@ main {
 
 aside .aside-news {
   width: 303px;
-  height: 667px auto;
+  height: 667px;
   background-color: #4d4382;
 }
 aside .aside-header {
@@ -549,7 +552,8 @@ aside .banner-group .banner-xs p {
 
 .carousel2 .carousel-container {
   width: 940px;
-  margin: 0 auto;
+  height: 400px;
+  margin: 0 auto 19px auto;
 }
 
 .carousel2 .carousel-container .carousel-background {
@@ -586,11 +590,16 @@ footer {
   justify-content: space-evenly;
 }
 
+.footer-box {
+  margin-top: 57px;
+  margin-bottom: 84px;
+}
+
 .footer-box p {
   color: #666;
   font-size: 14px;
   width: 303px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   font-family: "Bitter", serif;
 
 }
@@ -602,30 +611,29 @@ footer {
   font-family: "Bitter", serif;
   font-size: 19px;
   font-weight: 400;
-  padding: 20px;
+padding-bottom: 23px;
 }
 
 .box-header img { 
-  padding: 10px;
+  padding-right: 18px;
 }
 
 .footer-box2 {
   width: 313px;
   color: #666;
-  margin: 30px 15px 60px 15px;
+  margin: 70px 17px 69px 18px;
 }
 
 .footer-box2 h1 {
   color: #ccc;
   font-size: 24px;
   font-family: "Bitter", serif;
-  padding: 10px;
 }
 
 .footer-box2 p {
-  padding: 20px 0;
+  padding: 25px 0;
   font-family: "Bitter", serif;
-
+font-size: 14px;
 }
 
 .footer-box2 input {
@@ -635,7 +643,7 @@ footer {
   height: 53px;
   font-family: "Varela Round", sans-serif;
   font-size: 16px;
-  padding: 15px;
+  padding: 15px 72px 19px 21px;
 }
 
 .footer-box2 button {
@@ -646,29 +654,32 @@ footer {
   height: 53px;
   font-size: 16px;
   font-family: "Varela Round", sans-serif;
-
+padding: 15px 14px 19px 21px;
 }
 
 .footer-box3 {
   width: 303px;
-  padding-top: 30px;
+  margin-top: 70px;
+  margin-bottom: 64px;
 }
 
 .footer-box3 h1 {
   color: #ccc;
   font-size: 24px;
   font-family: "Bitter", serif;
-  padding: 10px;
+  padding-bottom: 31px;
 }
 
 .footer-box3 a {
   display: inline-block;
   background-color: #333333;
   color: #575757;
-  padding: 4px 9px;
-  margin: 3px;
+  padding: 4px 12px 4px 13px;
+  margin: 3px 1px;
   text-decoration: none;
   font-family: "Varela Round", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .footer-box3 a:hover {
@@ -687,13 +698,24 @@ footer {
   font-size: 24px;
   line-height: 28px;
   color: #fff;
-  padding: 10px;
+  padding-bottom: 25px;
+}
+
+.footer-box4, .footer-box5, .footer-box6 {
+  width: 303px;
+}
+
+.footer-box4 {
+  margin-right: 24px;
+}
+
+.footer-box5 {
+  margin-right: 20px;
 }
 
 .box {
   display: flex;
-  padding: 20px;
-  margin: 10px;
+  
 }
 
 .box:nth-child(odd) {
@@ -705,6 +727,7 @@ footer {
   border: 1px solid #fff;
   width: 70px;
   height: 70px;
+  padding: 0 0 21px 14px;
 }
 
 .box-info p {
