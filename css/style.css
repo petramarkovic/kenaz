@@ -457,7 +457,7 @@ main {
 
 aside .aside-news {
   width: 303px;
-  height: 667px;
+  height: auto;
   background-color: #4d4382;
 }
 aside .aside-header {
@@ -480,9 +480,10 @@ aside .aside-box {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 10px;
   border-bottom: 1px solid #000;
+}
+aside .aside-box .info {
+  margin: 35px 0px 24px 32px;
 }
 aside .aside-box p {
   font-family: "Varela Round", sans-serif;
@@ -500,17 +501,19 @@ aside .aside-box span {
 }
 aside .aside-box h2 {
   font-family: "Bitter", serif;
-  font-weight: bold;
-  font-size: 10px;
+  font-weight: 700;
+  font-size: 14px;
   line-height: 16.8px;
   color: #fff;
   width: 172px;
-  letter-spacing: 0.1rem;
 }
 aside .aside-box .news-img {
   width: 70px;
   height: 70px;
   border: 1px solid #fff;
+  background-size: cover;
+  object-fit: cover;
+  margin: 20px 33px 0 0;
 }
 aside .aside-box:hover {
   cursor: pointer;
@@ -581,7 +584,7 @@ footer {
 .footer-wrapper {
   width: 942px;
   margin: 0 auto;
-  height: 900px;
+  height: auto;
 }
 
 .footer-container {
@@ -601,7 +604,7 @@ footer {
   width: 303px;
   padding-bottom: 23px;
   font-family: "Bitter", serif;
-
+ line-height: 20px;
 }
 
 .box-header {
@@ -609,9 +612,11 @@ footer {
   align-items: center;
   color: #45b0e3;
   font-family: "Bitter", serif;
-  font-size: 19px;
-  font-weight: 400;
-padding-bottom: 23px;
+  font-size: 29.62px;
+  font-weight: normal;
+  font-style: normal;
+  padding-bottom: 21px;
+  line-height: 52px;
 }
 
 .box-header img { 
@@ -691,65 +696,82 @@ padding: 15px 14px 19px 21px;
 .footer-container-2 {
   display: flex;
   flex-direction: row;
+  height: auto;
 }
 
 .footer-container-2 h1 {
   font-family: "Bitter", serif;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 29px;
   color: #fff;
   padding-bottom: 25px;
+  line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .footer-box4, .footer-box5, .footer-box6 {
   width: 303px;
+  margin-bottom: 63px;
 }
 
 .footer-box4 {
-  margin-right: 24px;
+  margin-right: 18px;
 }
 
 .footer-box5 {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .box {
   display: flex;
+  height: 98px;
   
 }
 
 .box:nth-child(odd) {
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
+  mix-blend-mode: normal;
 }
 
 .box img {
+  margin: 20px 4px 25px 0px;
   border: 1px solid #fff;
   width: 70px;
   height: 70px;
-  padding: 0 0 21px 14px;
+}
+
+.box-info {
+  padding-top: 18px;
 }
 
 .box-info p {
   color: #666;
   font-size: 10px;
   font-family: "Varela Round", sans-serif;
-
 }
 
-.box-info span {
+.number-span {
   float: right;
   width: 36px;
+  height: 12px;
+  position: relative;
+  bottom: 10px;
 }
 
 .box-info h2 {
   font-family: "Bitter", serif;
   color: #ccc;
   font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  font-style: normal;
+  padding-bottom: 24px;
 }
 
 .footer-box6 {
-  width: 333px;
+  width: 303px;
 }
 
 .footer-box6 a {
@@ -760,6 +782,10 @@ padding: 15px 14px 19px 21px;
   margin: 3px;
   text-decoration: none;
   font-family: "Varela Round", sans-serif;
+  padding: 4px 12px 4px 13px;
+  margin: 3px 1px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .footer-box6 a:hover {
@@ -780,6 +806,7 @@ padding: 15px 14px 19px 21px;
   font-family: "Varela Round", sans-serif;
   font-size: 12px;
   padding-top: 19px;
+  height: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
