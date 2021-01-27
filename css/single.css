@@ -1,11 +1,13 @@
 .carousel-container {
     background-image: url(/images/single-carousel.png);
     height: 588px;
+    background-size: cover;
+    object-fit: cover;;
 }
 
 .carousel-info-single {
     position: relative;
-    top: 390px;
+    top: 210px;
     background-image: url(/images/single-carouselh1.png);
     padding: 30px;
 }
@@ -14,6 +16,8 @@
     color: #000;
     font-size: 12px;
     font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    line-height: 14.45px;
 
 }
 
@@ -21,7 +25,7 @@
   font-family: "Bitter", serif;
     font-size: 44px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 52.8px;
     width: 751px;
     height: 144px;
     
@@ -30,7 +34,7 @@
 .story {
     background-color: #fff;
     width: 622px;
-    height: 953px;
+    height: auto;
     margin-bottom: 18px;
 }
 
@@ -57,8 +61,10 @@
 .about-author h1 {
     font-family: "Bitter", serif;
     font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
     color: #363f48;
-    padding-top: 18px;
+    padding-top: 20px;
     padding-left: 31px;
 }
 
@@ -72,6 +78,7 @@
     font-family: "Varela Round", sans-serif;
     font-size: 13px;
     line-height: 20px;
+    font-weight: 400;
     color: #444;
     padding-left: 20px;
 }
@@ -79,8 +86,9 @@
 .comments {
     background-color: #fff;
     width: 622px;
-    height: 1015px;
+    height: auto;
     margin-top: 18px;
+    padding-bottom: 30px;
     margin-bottom: 45px;
 }
 
@@ -89,23 +97,37 @@
     font-size: 24px;
     padding-top: 15px;
     padding-left: 31px;
+    padding-bottom: 44px;
     font-weight: bold;
 }
 
 .comment {
     display: inline-block;
+    margin-bottom: 48.5px;
 }
 
 .comment img {
     float: left;
-   padding: 20px;
+   padding-left: 31px;
+   padding-right: 16px;
    display: inline-block;
 }
 
 .comment h3 {
     font-family: "Bitter", serif;
     font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
     color: #4d4382;
+}
+
+.comment span {
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+    padding-left: 10px;
 }
 
 .comment p {
@@ -114,7 +136,8 @@
     color: #444;
     line-height: 20px;
     display: inline-block;
-    padding: 10px;
+    padding-top: 3.5px;
+    
 }
 
 .comment a {
@@ -122,12 +145,13 @@
     font-size: 14px;
     text-decoration: none;
     padding-left: 200px;
+    line-height: 16.86px;
+    color: #4d4382;
 }
 
 .comment-info-container {
     display: flex;
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: column;;
 }
 
 .comment-info {
@@ -135,10 +159,14 @@
 }
 
 .add-comment-container {
-    padding: 30px;
     display: flex;
     flex-direction: column;
-    
+    height: auto;
+}
+
+.add-comment-container input {
+    display: block;
+    margin: 8px 30px 0 30px;
 }
 
 .add-comment-container p {
@@ -146,7 +174,7 @@
     font-size: 13px;
     color: #444;
     line-height: 20px;
-    margin-bottom: 26px;
+    padding: 0 23px 25.5px 30px;
 }
 
 .input-text, .add-comment-container textarea {
@@ -156,7 +184,7 @@
     color: #666;
     border: none;
     padding: 10px 17px;
-    margin: 8px 0;
+    margin: 8px 30px 18px 30px;
 }
 
 .input-text {
@@ -172,6 +200,7 @@
     padding: 15px;
     display: block;
     width: 153px;
+    margin: 0 auto 0 30px;
 }
 
 @media (max-width: 640px){
@@ -188,15 +217,18 @@
     .about-author {
         width: auto;
         height: auto;
+        text-align: center;
     }
     .author-info {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    
     .comments {
         width: auto;
         height: auto;
+        text-align: center;
     }
     .comment {
         display: flex;
@@ -213,6 +245,7 @@
     }
     .comment img {
         width: 100px;
-        margin: 0 auto;
+        margin: 10px auto;
     }
+    
 }

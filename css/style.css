@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: #000;
   overflow-x: hidden;
 }
 
@@ -142,7 +142,7 @@ nav a {
 .banner-big {
   display: block;
   width: 940px;
-  margin: 16px auto 18px auto;
+  margin: 16px auto 0 auto;
   height: 120px;
   background-color: #fff;
   border: 1px solid #d7d7d7;
@@ -160,8 +160,8 @@ nav a {
 .carousel-container {
   width: 940px;
   height: 425px;
-  margin: 0 auto;
-  margin-bottom: 19px;
+  margin: 0 auto 19px auto;
+  
 }
 
 .arrow {
@@ -178,13 +178,7 @@ nav a {
 
 .arrow-right {
   left: 95%;
-  top: 35%;
-}
-
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  top: 40%;
 }
 
  .slide-content {
@@ -196,14 +190,14 @@ nav a {
 .slide-content .news-image {
   width: 940px;
   height: 425px;
-  margin: 0 auto;
+  padding-bottom: 19px;
 }
 
 .slide-info {
   position: absolute;
   z-index: 2;
-  bottom: 100px;
-  margin: 20px;
+  bottom: 23px;
+  margin: 28px;
 }
 
  .slide-info span {
@@ -215,7 +209,9 @@ nav a {
   font-family: "Bitter", serif;
   color: #eef6fa;
   font-size: 34px;
-  width: 588px;
+  font-weight: 700;
+  line-height: 40.8px;
+  padding-bottom: 10px;
 }
 .slide-info button {
   font-family: "Varela Round", sans-serif;
@@ -225,12 +221,21 @@ nav a {
   color: #eef6fa;
 }
 
+.slide-date {
+  padding-left: 0;
+}
+
 main {
   width: 942px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+.news-image {
+  object-fit: cover;
+  background-size: cover;
 }
 
 .news-container {
@@ -275,12 +280,13 @@ main {
   font-size: 12px;
   display: inline;
   line-height: 14px;
+  font-weight: 400;
 }
 .news-container .news-box-container .news-box h3 {
   font-family: "Bitter", serif;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 16.8px;
 }
 .news-container .news-box-container .news-box span {
   float: right;
@@ -293,36 +299,41 @@ main {
 
 .business {
   border-left: 13px solid #EE6151;
+  height: auto;;
 }
 .business .news-box-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 30px;
+  padding: 38px 12px 29px 31px;
 }
 
+.business .news-header {
+  padding-bottom: 0;
+}
 
 .business .business-box img {
   width: 120px;
   height: 90px;
   float: left;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .business .business-box h3 {
   font-family: "Bitter", serif;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 16.8px;
   width: 154px;
   float: right;
-  padding-left: 10px;
+  margin-bottom: 30px;
 }
 
-.business .business-box p, span {
+.business .business-box p {
   font-family: "Varela Round", sans-serif;
   color: #999999;
   font-size: 12px;
   line-height: 14.45px;
-  padding-left: 15px;
+  font-weight: 400;
+  padding-left: 130px;
 }
 
 .banner-small {
@@ -381,21 +392,25 @@ main {
 .news-carousel-container-box img {
   width: 260px;
   height: 150px;
-  margin-top: 30px;
 }
 
 .news-carousel-container-box h3 {
   font-family: "Bitter", serif;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
-  margin-right: 10px;
+  font-weight: 700;
+  line-height: 16.8px;
 }
 
 .news-carousel-container-box p {
   font-family: "Varela Round", sans-serif;
   color: #999999;
   font-size: 12px;
+}
+
+.news-carousel-box {
+  width: 266px;
+  height: 219px;
+  margin: 30px 30px 0 0;
 }
 
 .editorials-local-news-container {
@@ -405,7 +420,7 @@ main {
 .editorials-container, .local-container {
   background-color: #fff;
   width: 297px;
-  height: 325px;
+  height: auto;
   border-left: 13px solid #a99765;
   
 }
@@ -413,7 +428,7 @@ main {
 .editorials-header, .local-header {
   display: flex;
   justify-content: space-between;
-  padding: 15px 30px;
+  padding: 15px 31px 31px 31px;
 }
 
 .editorials-header h2, .local-header h2 {
@@ -423,7 +438,11 @@ main {
 }
 
 .arrow-left-brown {
-  padding-right: 14px;
+  padding-right: 12px;
+}
+
+.arrow-left-brown, .arrow-right-brown {
+  padding-top: 7px;
 }
 
 .editorial-box, .local-box {
@@ -433,14 +452,13 @@ main {
 .editorial-box img, .local-box img {
   width: 230px;
   height: 150px;
-  margin-top: 20px;
 }
 
 .editorial-box h3, .local-box h3 {
   font-family: "Bitter", serif;
   font-size: 14px;
-  font-weight: bold;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 16.8px;
   margin-right: 10px;
 }
 
@@ -448,7 +466,9 @@ main {
   font-family: "Varela Round", sans-serif;
   color: #999999;
   font-size: 12px;
-  padding-top: 10px;
+  font-weight: 400;
+  line-height: 14.45px;
+  padding-top: 9px;
 }
 
 .local-container {
@@ -556,7 +576,7 @@ aside .banner-group .banner-xs p {
 .carousel2 .carousel-container {
   width: 940px;
   height: 400px;
-  margin: 0 auto 19px auto;
+  margin: 18px auto 19px auto;
 }
 
 .carousel2 .carousel-container .carousel-background {
@@ -568,11 +588,13 @@ aside .banner-group .banner-xs p {
   margin: 30px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 100px;
 }
 
 .carousel-images-row {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 footer {
@@ -827,7 +849,7 @@ padding: 15px 14px 19px 21px;
     width: auto;
   }
   .slide-content .news-image {
-    width: auto;
+    width: 100%;
     overflow: hidden;
   }
   .arrow-right {
@@ -842,14 +864,19 @@ padding: 15px 14px 19px 21px;
   }
   .carousel2 .carousel-container {
     width: auto;
+    margin: 18px 0 19px 0;
   }
   .carousel2 .carousel-container .carousel-background {
     width: auto;
   }
-  .carousel-images-row{
-    width: auto;
-   margin-top: 0;
-   height: 130px;
+  .carousel-arrows {
+    position: relative;
+    top: 100px;
+  }
+  .carousel-images-row img{
+    width: 80px;
+   height: 80px;
+   margin-top: 90px;
   }
   footer {
     height: auto;
@@ -907,21 +934,54 @@ padding: 15px 14px 19px 21px;
   }
   .news-container {
     width: auto;
-    margin: 0 auto;
+    margin: 0 auto 18px auto;
     height: auto;
     flex-direction: column;
   }
+
+  .news-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news-container .news-box-container .news-box .news-image, .news-container .news-box-container .news-box .sport-image {
+   width: 100%;
+   height: 100%;
+  }
+
   .news-container .news-box-container {
     flex-direction: column;
   }
+
   .business .news-box-container {
     display: flex;
+    flex-direction: column;
   }
   .business .business-box {
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .banner-small {
+
+  .business .business-box .business-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .business .business-box .business-heading {
     width: auto;
+  }
+
+  .business .business-box .business-date {
+    width: auto;
+    padding-left: 0;
+  }
+
+  .banner-small {
+    width: 100%;
   }
   .news-carousel-container {
     width: auto;
@@ -929,14 +989,61 @@ padding: 15px 14px 19px 21px;
   }
   .news-carousel-container-box {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
+
+ .news-carousel-box {
+ width: auto;
+ height: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.news-carousel-box .news-image {
+  width: 100%;
+  height: 100%;
+}
+
   .editorials-local-news-container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .editorials-container, .local-container {
     width: auto;
+    margin-bottom: 18px;
   }
   .local-container {
     margin-left: 0;
+  }
+
+  .editorial-box, .local-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .editorial-box .editorial-image, .local-box .local-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-arrows {
+    position: relative;
+    top: 100px;
+  }
+
+  .carousel-images-row {
+    margin-top: 150px;
+  }
+
+  .carousel-images-row img {
+    width: 60px;
+    height: 60px;
   }
 }
